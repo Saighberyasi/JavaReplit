@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+class Main {
+  
+  public static void main(String[] args) {
+    
+    System.out.printf("Insira o ângulo em graus: ");
+
+    Scanner Var = new Scanner(System.in);
+    double AnguloGraus = Var.nextDouble();
+
+    double AnguloRad = Math.toRadians(AnguloGraus);
+
+    double seno = Math.sin(AnguloRad);
+    double cosseno = Math.cos(AnguloRad);
+      
+    System.out.printf("O seno é %2f e cosseno é %2f", seno, cosseno);
+    
+  }
+  
+}
