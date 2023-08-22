@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+class Main {
+  
+  public static void main(String[] args) {
+    
+    System.out.printf("Insira a largura do terreno: ");
+
+    Scanner Var = new Scanner(System.in);
+    int Largura = Var.nextInt();
+
+    System.out.printf("Insira a comprimento do terreno: ");
+    int Comprimento = Var.nextInt();
+
+    int Area = Comprimento * Largura;
+    
+    System.out.printf("A área do terreno é de %d", Area);
+    
+  }
+  
+}
