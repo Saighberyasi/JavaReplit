@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+class Main {
+  
+  public static void main(String[] args) {
+    
+    System.out.printf("Insira a primeira nota: ");
+    
+    Scanner Var = new Scanner(System.in);
+    float Nota1 = Var.nextFloat();
+
+    System.out.printf("Insira a segunda nota: ");
+
+    float Nota2 = Var.nextFloat();
+
+    System.out.printf("Insira a terceira nota: ");
+
+    float Nota3 = Var.nextFloat();
+
+    float MediaAritmetica = (Nota1 + Nota2 + Nota3) / 3;
+    float MediaPonderada = (Nota1 + Nota2 + Nota3) / (1 + 2 + 3);
+      
+    System.out.printf("A média aritmética é %.2f e a média ponderada é %.2f", MediaAritmetica, MediaPonderada);
+    
+  }
+  
+}
