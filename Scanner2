@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+class Main {
+  
+  public static void main(String[] args) {
+
+    Scanner teclado = new Scanner(System.in);
+
+    System.out.printf("Informe um número inteiro: ");
+    int A = teclado.nextInt();
+
+    System.out.printf("Informe um número float: ");
+    float B = teclado.nextFloat();
+
+    System.out.printf("Você digitou os níumeros %d e %.2f\n", A, B);
+    
+  }
+  
+}
