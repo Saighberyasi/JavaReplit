@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+class Main {
+  
+  public static void main(String[] args) {
+
+    System.out.printf("Com base no salário mínimo de R$ 1.212,00: ");
+    float sal = 1212;
+
+    System.out.printf("\nInforme a quantidade de energia gasta em quilowatts: ");
+
+    Scanner salario = new Scanner(System.in);
+    float A = salario.nextFloat();
+    float fim = (sal/5) * A;
+    
+    System.out.printf("O preço dos quilowatts é de R$%.2f\n", fim);
+
+    System.out.printf("Com 15%% de desconto, o valor é de %.2f\n", (fim * 0.85)); 
+    
+  }
+  
+}
