@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+class Main {
+  
+  public static void main(String[] args) {
+    
+    System.out.printf("Insira o preço de fábrica do carro: ");
+
+    Scanner PrecoFabrica = new Scanner(System.in);
+    
+    float Distribuidor = PrecoFabrica.nextFloat();
+    float PrecoFinal = Distribuidor+(Distribuidor*45/100)+(Distribuidor*28/100);
+    
+    System.out.printf("O preço final do carro é de R$%.2f\n", PrecoFinal);
+    
+  }
+  
+}
