@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+class Main {
+  
+  public static void main(String[] args) {
+    
+    System.out.printf("Insira a quantidade de broas vendidas: ");
+    
+    Scanner Var = new Scanner(System.in);
+    float Broa = Var.nextFloat();
+
+    System.out.printf("Insira a quantidade de pães franceses vendidos: ");
+
+    float Pao = Var.nextFloat();
+    
+    float BroaV = (Broa * 150/100);
+    float PaoV = (Pao * 12/100);
+    float Total = (PaoV + BroaV);
+    float Poupanca = (Total* 10/100);
+    
+    System.out.printf("O valor das vendas foi de R$%.2f e o valor guardado na poupança deve ser de R$%.2f", Total, Poupanca);
+    
+  }
+  
+}
