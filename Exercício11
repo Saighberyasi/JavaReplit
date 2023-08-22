@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+class Main {
+  
+  public static void main(String[] args) {
+    
+    System.out.printf("Insira a quantidade de cavalos: ");
+
+    Scanner Var = new Scanner(System.in);
+    int Cavalos = Var.nextInt();
+
+    int Ferraduras = Cavalos * 4;
+    
+    System.out.printf("A quantidade de ferramentas necessárias é de %d", Ferraduras);
+    
+  }
+  
+}
