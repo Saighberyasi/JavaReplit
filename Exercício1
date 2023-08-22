@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+class Main {
+  
+  public static void main(String[] args) {
+    
+    System.out.printf("Insira seu peso em quilogramas: ");
+    
+    Scanner Var = new Scanner(System.in);
+    int PesoKG = Var.nextInt();
+
+    int PesoG = (PesoKG * 1000);
+    int PesoF = (PesoG*105/100);
+    float PesoFKG = (PesoF / 1000);
+      
+    System.out.printf("Seu peso em gramas é de %dg e seu peso após engordar 5%% é de %dg (%.2fkg)", PesoG, PesoF, PesoFKG);
+    
+  }
+  
+}
