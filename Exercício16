@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+class Main {
+  
+  public static void main(String[] args) {
+    
+    System.out.printf("Insira a quantidade máxima: ");
+    
+    Scanner Var = new Scanner(System.in);
+    int QMax = Var.nextInt();
+
+    System.out.printf("Insira a quantidade mínima: ");
+
+    int QMin = Var.nextInt();
+
+    int EstoqueMedio = (QMin + QMax) / 2;
+      
+    System.out.printf("O estoque médio é de %d", EstoqueMedio);
+    
+  }
+  
+}
