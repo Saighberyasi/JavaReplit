@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+class Main {
+  
+  public static void main(String[] args) {
+
+    Scanner num = new Scanner(System.in);
+
+    System.out.printf("Informe o primeiro número: ");
+    float A = num.nextFloat();
+
+    System.out.printf("Informe o segundo número: ");
+    float B = num.nextFloat();
+
+    float resto = A % B;
+
+    System.out.printf("O resto da divisão desses números é %f", resto);
+    
+  }
+  
+}
