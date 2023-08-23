@@ -1,0 +1,23 @@
+// Informar um saldo e imprimir o saldo com reajuste de 1%
+
+import java.util.Scanner;
+
+class Main {
+  
+  public static void main(String[] args) {
+
+    try(Scanner Var = new Scanner(System.in)){
+
+      System.out.printf("Insira o saldo: ");
+
+      float Saldo = Var.nextInt();
+
+      float SaldoF = (Saldo * 101/100);
+
+      System.out.printf("Seu saldo ajustado é de %.2f", SaldoF);
+
+        }
+
+    }
+
+}
