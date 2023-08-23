@@ -10,15 +10,15 @@ class Main {
 
     try(Scanner Var = new Scanner(System.in)){
 
-    System.out.printf("Insira quantos anos de idade você tem:\n ");
+    System.out.printf("Insira quantos anos de idade você tem: ");
     
     int Ano = Var.nextInt();
 
-    System.out.printf("Insira quantos meses de idade você tem:\n ");
+    System.out.printf("Insira quantos meses de idade você tem: ");
 
     int Mes = Var.nextInt();
 
-    System.out.printf("Insira quantos dias de idade você tem:\n ");
+    System.out.printf("Insira quantos dias de idade você tem: ");
 
     int DiaF = Var.nextInt();
 
