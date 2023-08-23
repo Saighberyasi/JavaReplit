@@ -1,0 +1,36 @@
+// Faça um programa que peça um valor e mostre na tela se o valor é positivo ou negativo
+
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+
+    try(Scanner Var = new Scanner(System.in)){
+
+      System.out.printf("Insira um número: ");
+
+      int Num = Var.nextInt();
+
+      if (Num > 0){
+
+        System.out.printf("O número é positivo.\n");
+
+    }
+
+    else if (Num == 0){
+
+      System.out.printf("O número zero não é nem negativo nem positivo.\n");
+
+    }
+
+      else{
+
+        System.out.printf("O número é negativo.\n");
+
+   }
+
+  }
+
+ }
+
+}
