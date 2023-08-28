@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+
+    try(Scanner Var = new Scanner(System.in)){
+
+      System.out.printf("Insira o primeiro valor (A): ");
+
+      int A = Var.nextInt();
+
+      System.out.printf("Insira o segundo valor (B): ");
+
+      int B = Var.nextInt();
+
+      int temp = A;
+      A = B;
+      B = temp;
+
+      System.out.printf("A vale %d e B vale %d.\n ", A, B);
+
+    }
+  }
+}
