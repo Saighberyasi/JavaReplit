@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+
+    try(Scanner Var = new Scanner(System.in)){
+
+      System.out.printf("Insira quantas latas foram compradas: ");
+
+      int Latas = Var.nextInt();
+
+      System.out.printf("Insira quantas garrafas de 600 ml foram compradas: ");
+
+      int Garrafas600 = Var.nextInt();
+
+      System.out.printf("Insira quantas garrafas de 2L foram compradas: ");
+
+      int Garrafas2L = Var.nextInt();
+
+      double LatasLitros = (Latas * 0.35);
+      double Garrafas600Litros = (Garrafas600 * 0.60);
+      double Garrafas2Litros = (Garrafas2L * 2.00);
+      double LitrosFinal = (LatasLitros + Garrafas600Litros + Garrafas2Litros);
+
+      System.out.printf("Foram comprados %.2f litros de refrigerante.\n", LitrosFinal);
+ 
+
+    }
+  }
+}
