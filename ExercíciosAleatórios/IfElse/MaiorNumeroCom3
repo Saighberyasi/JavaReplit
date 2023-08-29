@@ -1,0 +1,31 @@
+//  Faça um programa que leia três números, verifique (usando if e else), e mostre o maior deles.
+
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+
+    try(Scanner Var = new Scanner(System.in)){
+
+      System.out.printf("Insira o primeiro número: ");
+
+      double Num1 = Var.nextDouble();
+
+      System.out.printf("Insira o segundo número: ");
+
+      double Num2 = Var.nextDouble();
+
+      System.out.printf("Insira o terceiro número: ");
+
+      double Num3 = Var.nextDouble();
+
+      if (Num1 > Num2 && Num1 > Num3){
+        System.out.printf("O maior número é %.2f \n", Num1); }
+
+        else if (Num2 > Num1 && Num2 > Num3){  
+        System.out.printf("O maior número é %.2f \n", Num2); }
+
+        else { System.out.printf("O maior número é %.2f \n", Num3); }
+    }
+  }
+}
