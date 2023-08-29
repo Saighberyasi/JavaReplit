@@ -1,0 +1,41 @@
+//  Faça um programa que leia três números, verifique (usando if e else) e mostre o maior e o menor deles; 
+
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+
+    try(Scanner Var = new Scanner(System.in)){
+
+      System.out.printf("Insira o primeiro número: ");
+
+      float Num1 = Var.nextFloat();
+
+      System.out.printf("Insira o segundo número: ");
+
+      float Num2 = Var.nextFloat();
+
+      System.out.printf("Insira o terceiro número: ");
+
+      float Num3 = Var.nextFloat();
+
+      if (Num1 > Num2 && Num1 > Num3 && Num2 > Num3){ 
+        System.out.printf("O maior número é %.2f e o menor número é %.2f", Num1, Num3); }
+
+        else if (Num1 > Num2 && Num1 > Num3 && Num3 > Num2){ 
+          System.out.printf("O maior número é %.2f e o menor número é %.2f", Num1, Num2); }
+
+        else if (Num2 > Num1 && Num2 > Num3 && Num1 > Num3){ 
+          System.out.printf("O maior número é %.2f e o menor número é %.2f.", Num2, Num3); }
+
+        else if (Num2 > Num1 && Num2 > Num3 && Num3 > Num1){ 
+          System.out.printf("O maior número é %.2f e o menor número é %.2f.", Num2, Num1); }
+
+        else if (Num3 > Num1 && Num3 > Num2 && Num1 > Num2){ 
+          System.out.printf("O maior número é %.2f e o menor número é %.2f", Num3, Num2); }
+
+        else{ System.out.printf("O maior número é %.2f e o menor número é %.2f.", Num3, Num1); }
+
+    }
+  }
+}
