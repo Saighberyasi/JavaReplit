@@ -1,0 +1,42 @@
+package com.mycompany.teste;
+
+import java.util.Arrays;
+
+import java.util.Scanner;
+
+public class Teste{
+
+  public static void main(String[] args) {
+        
+    try(Scanner input = new Scanner(System.in)) {
+
+        int[] Vetor = new int[10];
+        int i, j, aux;
+
+        for(i=0;i<10;i++) {
+
+          System.out.printf("Informe o %d° valor: ",i+1);
+          Vetor[i] = input.nextInt();
+        }
+
+        System.out.printf("Dados Lidos:\n");  
+        for(i=0;i<10;i++) {
+          System.out.printf("%d\t",Vetor[i]);
+        }
+        
+        for(i=0;i<9;i++){
+          for(j=i+1;j<10;j++){
+            if (Vetor[i]>Vetor[j]){
+                aux = Vetor[i];
+                Vetor[i] = Vetor[j];
+                Vetor[j] = aux;
+              
+          }
+        }
+      }
+      System.out.printf("Dados Lidos:\n");  
+      for(i=0;i<10;i++) {
+        System.out.printf("%d\t", Vetor[i]); }
+   }
+  }
+ }
