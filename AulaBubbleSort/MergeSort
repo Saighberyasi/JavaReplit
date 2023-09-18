@@ -34,7 +34,7 @@ public class Teste{
           }
         }
       }
-      System.out.printf("Dados Lidos:\n");  
+      System.out.printf("Dados Ordenados:\n");  
       for(i=0;i<10;i++) {
         System.out.printf("%d\t", Vetor[i]); }
    }
